@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-------------------------------------------------------------- 
+                    INFORMAZIONI SULLA PAGINA
+---------------------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX - Snack Array Avanzati</title>
+</head>
+
+<!-------------------------------------------------------------- 
+                    CONTENUTO VISIBILE DELLA PAGINA
+---------------------------------------------------------------->
+
+<body>
+
+    <header>
+        <h1>EX - Snack Array Avanzati</h1>
+    </header>
+
+    <main>
+
+        <!-- Introduzione -->
+        <section>
+            <p>
+                Hai un array di oggetti che rappresentano dei libri.
+                Ogni libro contiene informazioni come titolo, numero di pagine,
+                autore, disponibilità, prezzo e tag.
+            </p>
+
+            <h3>Struttura dei dati</h3>
+            <img src="img/books-array.png" alt="Array dei libri">
+        </section>
+
+        <!-- Snack 1 -->
+        <section>
+            <h2> Snack 1 - Filtra e Modifica</h2>
+
+            <ul>
+                <li>
+                    Crea una funzione che somma due numeri.
+                </li>
+                <li> 
+                    Crea un array longBooks con i libri che hanno più di 300 pagine. 
+                </li>
+                <li> 
+                    Creare un array (longBooksTitles) che contiene solo i titoli 
+                    dei libri contenuti in longBooks. 
+                </li>
+                <li>
+                    Stampa in console ogni titolo.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Snack 2 -->
+        <section>
+            <h2> Snack 2 - Il primo libro scontato</h2>
+
+            <ul>
+                <li> 
+                    Creare un array (availableBooks) che contiene tutti i libri disponibili. 
+                </li>
+                <li>
+                    Crea un array (discountedBooks) con gli availableBooks, 
+                    ciascuno con il prezzo scontato del 20% (mantieni lo stesso
+                    formato e arrotonda al centesimo)
+                </li>
+                <li>
+                    Salva in una variabile (fullPricedBook) il primo elemento di discountedBooks 
+                    che ha un prezzo intero (senza centesimi).
+                </li>
+            </ul>
+        </section>
+
+        <!-- Snack 3 -->
+        <section>
+            <h2> Snack 3 - Ordinare gli Autori</h2>
+
+            <ul>
+                <li>
+                    Creare un array (authors) che contiene gli autori dei libri.
+                </li>
+                <li>
+                    Crea una variabile booleana (areAuthorsAdults) per verificare 
+                    se gli autori sono tutti maggiorenni.
+                </li>
+                <li>
+                    Ordina l’array authors in base all’età, senza creare un nuovo array.
+                    (se areAuthorsAdult è true, ordina in ordine crescente, altrimenti in ordine decrescente)
+                </li>
+            </ul>
+        </section>
+
+        <!-- Snack 4 -->
+        <section>
+            <h2> Snack 4 - Calcola l’età media</h2>
+
+            <ul>
+                <li>
+                    Creare un array (ages) che contiene le età degli autori dei libri.
+                </li>
+                <li>
+                    Calcola la somma delle età (agesSum) usando reduce.
+                </li>
+                <li>
+                    Stampa in console l’età media degli autori dei libri.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Snack 5 -->
+        <section>
+            <h2> Snack 5 (Bonus) - Raccogli i libri</h2>
+
+            <ul>
+                <li>
+                    Usando l’API locale con base URL: <code>http://localhost:3333</code>
+                    usa la combinazione di .map() e Promise.all(), per creare una funzione
+                    (getBooks) che a partire da un array di id (ids),
+                    ritorna una promise che risolve un array di libri (books).
+                    Testala con l’array [2, 13, 7, 21, 19] .
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- Snack 6 -->
+        <section>
+            <h2> Snack 6 (Bonus) - Ordina i libri</h2>
+
+            <ul>
+                <li>
+                    Crea una variabile booleana (areThereAvailableBooks) per verificare 
+                    se c’è almeno un libro disponibile.
+                </li>
+                <li>
+                    Crea un array (booksByPrice) con gli elementi di books 
+                    ordinati in base al prezzo (crescente).
+                </li>
+                <li>
+                    Ordina l’array booksByPricein base alla disponibilità 
+                    (prima quelli disponibili), senza creare un nuovo array.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Snack 7 -->
+        <section>
+            <h2> Snack 7 (Bonus) - Analizza i tag</h2>
+
+            <ul>
+                <li>
+                    Usa reduce per creare un oggetto (tagCounts) che conta quante volte 
+                    ogni tag viene usato tra i libri.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
