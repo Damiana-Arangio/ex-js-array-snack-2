@@ -111,7 +111,7 @@ const tagCountsProf = books.reduce((obj, book) => {
 
         // Se il tag (key dell'oggetto) già esiste, incremento il valore (tag ritrovato)
         if (obj[currTag]) {
-            obj[currTag] = obj[currTag] + 1;
+            obj[currTag]++;
         }
 
         // Altrimenti, creo la chiave e imposto come valore 1 (tag trovato per la prima volta)
